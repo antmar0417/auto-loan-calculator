@@ -5,24 +5,54 @@
     <meta name="viewport" content="width=device-width" />
     <title>Car Loan Calculator</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="//d26tpo4cm8sb6k.cloudfront.net/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="//d26tpo4cm8sb6k.cloudfront.net/icon-16x16.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="//d26tpo4cm8sb6k.cloudfront.net/icon-32x32.png"
+    />
   </head>
   <body>
-    <p>Car Price</p>
-    <script src="script.js"></script>
-    <p><input type="text" id="amount" />&nbsp;USD</p>
-    <p>Interest Rate</p>
-    <p><input type="text" id="interest" />&nbsp;%</p>
-    <p>Loan Term</p>
-    <p><input type="text" id="year" />&nbsp;Year</p>
-    <br />
-    <p>
-      <button onclick="calc();" style="color: green">Calculate</button>
-      <input type="text" id="result" />&nbsp;USD / Month
-    </p>
+    <div class="content">
+      <p>Car Price</p>
+      <p><input placeholder="USD..." type="text" id="amount" required /></p>
+      <p>Interest Rate</p>
+      <p>
+        <input placeholder="Value In...%" type="text" id="interest" required />
+      </p>
+      <p>Cash Deposit</p>
+      <p>
+        <input
+          placeholder="Value In...%"
+          type="text"
+          id="cashDeposit"
+          required
+        />
+      </p>
+      <p>Loan Term</p>
+      <p><input placeholder="Year..." type="text" id="year" required /></p>
+      <br />
+      <div>
+        <button onclick="calc();" style="color: green">Calculate</button>
+        <input type="text" id="result" />&nbsp;USD / Month
+      </div>
+    </div>
     <footer>
       <p>
         <em><strong>Copyright &copy;</strong> 2022 Anton Marinov</em>
       </p>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
