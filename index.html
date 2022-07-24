@@ -26,30 +26,25 @@
   <body>
     <div class="content">
       <p>Car Price</p>
-      <p><input placeholder="USD..." type="text" id="amount" required /></p>
+      <p><input placeholder="Ammount..." type="text" id="amount" /></p>
       <p>Interest Rate</p>
       <p>
-        <input placeholder="Value In...%" type="text" id="interest" required />
+        <input placeholder="Value In...%" type="text" id="interest" />
       </p>
       <p>Cash Deposit</p>
       <p>
-        <input
-          placeholder="Value In...%"
-          type="text"
-          id="cashDeposit"
-          required
-        />
+        <input placeholder="Value In...%" type="text" id="cashDeposit" />
       </p>
       <p>Loan Term</p>
-      <p><input placeholder="Year..." type="text" id="year" required /></p>
-      <br />
-      <div>
-        <button onclick="calc();" style="color: green">Calculate</button>
-        <input type="text" id="result" />&nbsp;USD / Month
+      <p><input placeholder="Year..." type="text" id="year" /></p>
+      <button onclick="calc()">Calculate</button>
+      <div class="result">
+        <p>Monthly Payment</p>
+        <input type="text" id="result" />
       </div>
     </div>
     <footer>
-      <p>
+      <p class="footer-text">
         <em><strong>Copyright &copy;</strong> 2022 Anton Marinov</em>
       </p>
     </footer>
